@@ -1,0 +1,62 @@
+/* Основной цвет текст #212121  */
+/* Вторичный цвет текста #757575 */
+/* Белый цвет #FFFFFF */
+/* Акцент #2196F3 */
+/* Футер rgba(255, 255, 255, 0.6); */
+/* Веб студия #000000, #2196F3 */
+/* Цвет фона background: #ffffff; */
+/* Цвет фона героя #2F303A */
+/* Цвет фона футера background: #2F303A; */
+
+
+:root{
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --background-color: #2F303A;
+    --logo-color: #000000;
+    --wite-text-color: #FFFFFF;
+    --wite-bg-color:#FFFFFF;
+}
+
+
+
+body{
+    background: var(--wite-bg-color);
+    color: var(--primary-text-color)
+}
+.logo{
+    color: var(--logo-color);
+}
+
+/* Site nav */
+.site-nav .link{
+    color:var(--primary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: var(--accent-color);
+}
+
+/* Contacts */
+.contacts .link{
+    color: var(--secondary-text-color);
+}
+.contacts .link:hover,
+.contacts .link:focus{
+    color:var(--accent-color);
+}
+
+/* Main */
+/* Hero */
+.hero-title{
+    color: var(--wite-text-color)
+}
+.hero{
+    background-color: var(--background-color);
+}
+
+/* Требования */
+.requirements-text{
+    color: var(--secondary-text-color);
+}
