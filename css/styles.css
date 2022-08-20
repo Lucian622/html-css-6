@@ -8,55 +8,185 @@
 /* Цвет фона героя #2F303A */
 /* Цвет фона футера background: #2F303A; */
 
-
-:root{
-    --primary-text-color: #212121;
-    --secondary-text-color: #757575;
-    --accent-color: #2196F3;
-    --background-color: #2F303A;
-    --logo-color: #000000;
-    --wite-text-color: #FFFFFF;
-    --wite-bg-color:#FFFFFF;
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --background-color: #2f303a;
+  --logo-color: #000000;
+  --wite-text-color: #ffffff;
+  --wite-bg-color: #ffffff;
+  --rgb-wite-color: rgba(255, 255, 255, 0.6);
 }
 
-
-
-body{
-    background: var(--wite-bg-color);
-    color: var(--primary-text-color)
+body {
+  background: var(--wite-bg-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
 }
-.logo{
-    color: var(--logo-color);
-}
+/* Logo */
+.logo {
+  color: var(--logo-color);
+  font-family: Raleway, sans-serif;
 
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-text {
+  color: var(--accent-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
 /* Site nav */
-.site-nav .link{
-    color:var(--primary-text-color);
+.site-nav-link {
+  color: var(--primary-text-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus{
-    color: var(--accent-color);
+.site-nav-link:hover,
+.site-nav-link:focus {
+  color: var(--accent-color);
+}
+.site-nav,
+.contacts-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 /* Contacts */
-.contacts .link{
-    color: var(--secondary-text-color);
+.contacts .link {
+  color: var(--secondary-text-color);
 }
-.contacts .link:hover,
-.contacts .link:focus{
-    color:var(--accent-color);
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
 }
 
 /* Main */
 /* Hero */
-.hero-title{
-    color: var(--wite-text-color)
+.hero-title {
+  color: var(--wite-text-color);
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
-.hero{
-    background-color: var(--background-color);
+.hero {
+  background-color: var(--background-color);
+}
+.hero-button {
+  background-color: var(--accent-color);
+  color: var(--wite-text-color);
+}
+/* Sections */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* Требования */
-.requirements-text{
-    color: var(--secondary-text-color);
+.requirements-text {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.requirements-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Team */
+.team-text {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+
+ .filter-button {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--wite-text-color);
+}
+/* MENU */
+.menu-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.menu-text {
+  font-style: normal;
+  counter-reset: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+/* Футер */
+
+.footer {
+  background-color: var(--background-color);
+}
+.logo-footer {
+  color: var(--wite-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.contacts-footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-contacts-link {
+  color: var(--rgb-wite-color);
+}
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+  color: var(--accent-color);
+}
+.calor-map {
+  color: var(--wite-text-color);
 }
