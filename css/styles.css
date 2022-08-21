@@ -51,8 +51,13 @@ body {
 .site-nav-link:focus {
   color: var(--accent-color);
 }
-.site-nav,
-.contacts-list {
+.site-nav-link{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contacts-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -72,8 +77,6 @@ body {
 /* Hero */
 .hero-title {
   color: var(--wite-text-color);
-  font-family: 'Roboto';
-  font-style: italic;
   font-weight: 700;
   font-size: 44px;
   line-height: 1.36;
@@ -87,6 +90,10 @@ body {
 .hero-button {
   background-color: var(--accent-color);
   color: var(--wite-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 /* Sections */
 .section-title {
@@ -100,13 +107,11 @@ body {
 /* Требования */
 .requirements-text {
   color: var(--secondary-text-color);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .requirements-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -117,7 +122,6 @@ body {
 /* Team */
 .team-text {
   color: var(--secondary-text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   /* text-align: center; */
@@ -153,9 +157,7 @@ body {
   letter-spacing: 0.06em;
 }
 .menu-text {
-  font-style: normal;
-  counter-reset: var(--secondary-text-color);
-  font-weight: 400;
+  color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -175,7 +177,7 @@ body {
   letter-spacing: 0.03em;
 }
 .contacts-footer {
-  font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
