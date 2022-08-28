@@ -199,7 +199,9 @@ margin-bottom: 50px;
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+.section-pd{
+  padding-top: 0px;
+}
 /* Требования */
 .requirements-text {
 
