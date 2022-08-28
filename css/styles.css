@@ -41,7 +41,7 @@ ul{
 .container{
 margin-left: auto;
 margin-right: auto;
-width: 1230px;
+width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 /* outline: 2px solid tomato; */
@@ -49,6 +49,7 @@ padding-right: 15px;
 
 /* Logo */
 .logo {
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -67,9 +68,12 @@ padding-right: 15px;
   text-decoration: none;
 }
 
+.header-posirtion{
+  border-bottom: 1px solid #ECECEC;
+}
+
 /* Main-nav */
 .div-nav{
-  border-bottom: 1px solid #ECECEC;
 
   display: flex;
   align-items: center;
@@ -132,8 +136,10 @@ padding-bottom: 32px;
 /* Main */
 /* Hero */
 .hero-title {
-margin-bottom: 30px;
-  
+  margin: auto;
+  margin-bottom: 30px;
+width: 696px;
+
   font-weight: 700;
   font-size: 44px;
   line-height: 1.36;
@@ -150,6 +156,20 @@ margin-bottom: 30px;
   text-align: center;
 
 }
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .hero-button {
   border-radius: 4px;
   padding: 10px 32px;
@@ -212,9 +232,7 @@ margin-bottom: 10px;
 }
 
 /*  Деятельность */
-.section-pd{
-  padding-top: 0px;
-}
+
 .activity{
   display: flex;
   
@@ -225,9 +243,20 @@ margin-bottom: 10px;
 .activity-item:nth-child(3n){
   margin-right: 0px;
 }
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 
 /* Team */
+
+.description{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
 .team-text {
 
   font-size: 16px;
@@ -238,7 +267,6 @@ margin-bottom: 10px;
   color: var(--secondary-text-color);
 }
 .team-title {
-margin-top: 30px;
 margin-bottom: 10px;
 
   font-weight: 500;
@@ -257,6 +285,8 @@ margin-bottom: 10px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
+
+
 .team-item:nth-child(4n){
   margin-right: 0px;
 }
@@ -290,13 +320,14 @@ margin-right: 0px;
 
   color: var(--primary-text-color);
   background-color: var(--bg-color-secondary);
-  filter: drop-shadow(0px 4px 4px var(--shadow-button--))
+  
 }
 
 .filter-button:hover,
 .filter-button:focus {
   background-color: var(--accent-color);
   color: var(--wite-text-color);
+  filter: drop-shadow(0px 4px 4px var(--shadow-button--))
 }
 /* MENU */
 .menu{
@@ -314,6 +345,8 @@ margin-right: 0px;
   margin-right: 0px;
 }
 .menu-title {
+margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -327,14 +360,23 @@ margin-right: 0px;
   color: var(--secondary-text-color);
 }
 
+.filter-main{
+  padding: 20px 24px 20px 24px;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;;
+  border-left:1px solid #EEEEEE; ;
+}
+
 /* Футер */
 
 .footer {
   padding-top: 60px;
-  padding-bottom: 57px;  
+  padding-bottom: 60px;  
   background-color: var(--background-color);
 }
 .logo-footer {
+  display: block;
+  margin-bottom: 20px;
 
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -345,7 +387,6 @@ margin-right: 0px;
   color: var(--wite-text-color);
 }
 .contacts-footer {
-padding-top: 20px;
 
   font-style: normal;
   font-size: 14px;
