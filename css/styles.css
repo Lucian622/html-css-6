@@ -68,7 +68,7 @@ padding-right: 15px;
   text-decoration: none;
 }
 
-.header-posirtion{
+.header-position{
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -183,7 +183,7 @@ width: 696px;
 
   background-color: var(--accent-color);
   color: var(--wite-text-color);
-  filter: drop-shadow(0px 4px 4px var(--shadow-button--))
+  
 }
 /* Sections */
 .section{
