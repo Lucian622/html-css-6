@@ -41,12 +41,16 @@
     <main>
       <!-- Герой -->
       <section class="hero overlay">
-        <div class="">
         <div class="container">
           <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-          <button class="hero-button" type="button">Заказать услугу</button>
+          <button data-modal-open class="hero-button" type="button">Заказать услугу</button>
+          <div class="backdrop is-hidden" data-modal>
+              <div class="modal">
+             <p></p>
+            <button class="close-button"data-modal-close > <svg class="close-button-icon"> <use href="./images/icons.svg/symbol-defs.svg#icon-close-black"></use> </svg></button>
+              </div>
+          </div>
         </div>
-      </div>
       </section>
 
       <!-- Требования -->
@@ -109,12 +113,15 @@
           <ul class="activity list">
             <li class="activity-item">
               <img src="./images/box-1.png" alt="программирование " width="370" height="294px" />
+              <h3 class="activity-title">Десктопные приложения</h3>
             </li>
             <li class="activity-item">
               <img src="./images/box-2.png" alt="мобильное программирование " width="370" height="294px" />
+              <h3 class="activity-title">Мобильные приложения</h3>
             </li>
             <li class="activity-item">
               <img src="./images/box-3.png" alt="графический дизайн" width="370" height="294px" />
+              <h3 class="activity-title">Дизайнерские решения</h3>
             </li>
           </ul>
         </div>
@@ -382,5 +389,15 @@
           </div>
         </address>
     </footer>
+
+    <!-- Backdrop -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+     <p></p>
+    <button class="close-button"data-modal-close > <svg class="close-button-icon"> <use href="./images/icons.svg/symbol-defs.svg#icon-close-black"></use> </svg></button>
+      </div>
+  </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
