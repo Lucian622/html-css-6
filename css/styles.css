@@ -109,6 +109,7 @@ padding-bottom: 32px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--primary-text-color);
 }
 .active{
@@ -146,6 +147,7 @@ padding-bottom: 32px;
   display: flex;
   align-items: center;
 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--secondary-text-color);
 }
 .contacts{
@@ -238,20 +240,30 @@ padding-bottom: 32px;
   min-width: 528px;
   min-height: 581px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
+  border-radius: 4px;
 
   background-color: #ffffff;
 }
 .close-button{
   position: absolute;
-  right: 0px;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--wite-bg-color);
 }
 .close-button-icon{
   width:11px;
   height: 11px;
+
 }
 .is-hidden{
   opacity: 0;
@@ -433,11 +445,13 @@ background-color: var(--wite-bg-color);
   height: 44px;
   width: 44px;
   display: flex;
-  background-color: var(--wite-bg-color);
   border-radius: 50%;
-  color: var(--icon-team-color--);
   align-items: center;
   justify-content: center;
+
+  color: var(--icon-team-color--);
+  background-color: var(--wite-bg-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .social{
   margin-top: 16px ;
@@ -489,10 +503,11 @@ background-color: var(--wite-bg-color);
   width: 100%;
   align-items: center;
   justify-content: center;
-  fill: var(--icon-team-color--);
-  border: 1px solid #AFB1B8;
   border-radius: 4px;
 
+  border: 1px solid #AFB1B8;
+  fill: var(--icon-team-color--);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Фильтр меню */
@@ -523,6 +538,7 @@ margin-right: 0px;
   color: var(--primary-text-color);
   background-color: var(--bg-color-secondary);
   border: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -645,6 +661,7 @@ color: var(--primary-text-color);
 
 .footer-contacts-link {
   color: var(--rgb-wite-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
@@ -668,11 +685,13 @@ color: var(--primary-text-color);
   height: 44px;
     width: 44px;
     display: flex;
-    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    fill: var(--wite-text-color);
     align-items: center;
     justify-content: center;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--wite-text-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link-footer:hover,
 .social-link-footer:focus{
